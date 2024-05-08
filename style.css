@@ -1,0 +1,185 @@
+:root {
+  --primary-color: hsl(14, 45%, 36%);
+  --primary-color2: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.ricetta {
+  padding: 40px 32px;
+}
+.ricetta .titolo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ricetta .titolo h1 {
+  font-size: 36px;
+  color: var(--dark-charcoal);
+  margin: 0;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+.ricetta .titolo p {
+  color: var(--wenge-brown);
+  font-family: "Outfit", sans-serif;
+}
+.ricetta .preparazione {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+}
+.ricetta .preparazione h2 {
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  color: var(--primary-color2);
+  font-weight: 600;
+  margin: 0;
+}
+.ricetta .preparazione ul {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--wenge-brown);
+  margin: 0;
+  padding-left: 24px;
+}
+.ricetta .preparazione ul li {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.ricetta .preparazione li::marker {
+  color: var(--primary-color2);
+}
+.ricetta .preparazione span,
+.ricetta .istruzioni span {
+  font-weight: 700;
+}
+.ricetta .ingredienti h2,
+.ricetta .istruzioni h2,
+.ricetta .nutrizione h2 {
+  font-family: "Young Serif", sans-serif;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.ricetta .ingredienti ul,
+.ricetta .istruzioni ol,
+.ricetta .nutrizione p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--wenge-brown);
+  margin: 0;
+}
+.ricetta .ingredienti ul {
+  padding-left: 24px;
+}
+.ricetta .ingredienti ul li,
+.ricetta .istruzioni ol li {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.ricetta .ingredienti li::marker {
+  color: var(--primary-color);
+}
+.ricetta .istruzioni li::marker {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.ricetta .istruzioni ol {
+  padding-left: 24px;
+}
+.ricetta hr {
+  border: 1px solid #E3DDD7;
+  margin: 32px 0;
+}
+.ricetta .nutrizione p {
+  padding-bottom: 24px;
+}
+.ricetta table {
+  width: 75%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.ricetta table td {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+.ricetta table tr:last-child {
+  border: none;
+}
+.ricetta table tr {
+  border-bottom: 1px solid #E3DDD7;
+}
+.ricetta table td:first-child {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--wenge-brown);
+  margin: 0;
+}
+.ricetta table td:last-child {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 11px;
+  margin: 0 auto;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .img-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .img-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: var(--eggshell);
+  }
+  .img-mobile {
+    display: none;
+  }
+  .ricetta {
+    background-color: var(--white);
+    width: 736px;
+    margin: 50px auto;
+    border-radius: 24px;
+  }
+  .ricetta img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

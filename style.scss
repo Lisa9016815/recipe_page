@@ -1,0 +1,238 @@
+:root {
+    --primary-color: hsl(14, 45%, 36%);
+    --primary-color2: hsl(332, 51%, 32%);
+
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.ricetta {
+    padding: 40px 32px;
+
+    .titolo {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .titolo h1 {
+        font-size: 36px;
+        color: var(--dark-charcoal);
+        margin: 0;
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+    }
+
+    .titolo p {
+        color: var(--wenge-brown);
+        font-family: "Outfit", sans-serif;
+
+    }
+
+    .preparazione {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+    }
+
+    .preparazione h2 {
+        font-size: 20px;
+        font-family: "Outfit", sans-serif;
+        color: var(--primary-color2);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .preparazione ul {
+        font-family: "Outfit", sans-serif;
+        font-size: 16px; 
+        font-weight: 400;
+        color: var(--wenge-brown);
+        margin: 0;
+        padding-left: 24px; 
+    }
+
+    .preparazione ul li {
+        padding-left: 16px;
+        margin-bottom: 8px;
+    }
+
+    .preparazione li::marker {
+        color: var(--primary-color2);
+    }
+
+    .preparazione span,
+    .istruzioni span {
+        font-weight: 700;
+    }
+
+    .ingredienti h2,
+    .istruzioni h2,
+    .nutrizione h2 {
+        font-family: "Young Serif", sans-serif;
+        color: var(--primary-color);
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .ingredienti ul,
+    .istruzioni ol,
+    .nutrizione p {
+        font-family: "Outfit", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--wenge-brown);
+        margin: 0;
+    }
+
+    .ingredienti ul {
+        padding-left: 24px; 
+    }
+
+    .ingredienti ul li,
+    .istruzioni ol li {
+        padding-left: 16px;
+        margin-bottom: 8px;
+    }
+
+    .ingredienti li::marker {
+        color: var(--primary-color);
+    }
+
+    .istruzioni li::marker {
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+
+    .istruzioni ol {
+        padding-left: 24px; 
+    }
+
+    hr {
+        border: 1px solid #E3DDD7;
+        margin: 32px 0;
+    }
+
+    .nutrizione p {
+        padding-bottom: 24px;
+    }
+
+    table {
+        width: 75%;
+        margin: 0 auto;
+        border-collapse: collapse;
+
+        td {
+            padding-bottom: 12px;  
+            padding-top: 12px;
+
+        }
+
+        tr:last-child {
+            border: none; 
+        }
+
+        tr {
+            border-bottom: 1px solid #E3DDD7;
+        }
+
+        td:first-child {
+            font-family: "Outfit", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--wenge-brown);
+            margin: 0;
+        }
+
+        td:last-child {
+            font-family: "Outfit", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+        }
+    }
+}
+
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    text-align: center; 
+    font-size: 11px;
+    margin: 0 auto;
+    width: 100%;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .img-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+    .img-desktop {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: var(--eggshell);
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .ricetta {
+        background-color: var(--white);
+        width: 736px;
+        margin: 50px auto;
+        border-radius: 24px;
+        
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+
+// - Font size (paragraph): 16px
+
+// ### Fonts
+
+// - Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+// - Weights: 400
+
+// - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+// - Weights: 400, 600, 700
